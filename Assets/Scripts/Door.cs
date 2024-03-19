@@ -23,9 +23,19 @@ public class Door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CheckDoorState();
+    }
+
+    private void CheckDoorState()
+    {
         if (openDoor)
         {
             i = 1;
+            transform.position = Vector2.MoveTowards(transform.position, points[i].position, openingSpeed * Time.deltaTime);
+        }
+        else
+        {
+            i = 0;
             transform.position = Vector2.MoveTowards(transform.position, points[i].position, openingSpeed * Time.deltaTime);
         }
     }
