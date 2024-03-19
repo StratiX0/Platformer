@@ -62,9 +62,14 @@ public class HealthManager : MonoBehaviour
 
     private void Die()
     {
-        if (health <= 0)
+        if (health <= 0 && this.tag != "Player")
         {
             Destroy(this.gameObject);
+        }
+        else if (health <= 0 && this.tag == "Player")
+        {
+            this.gameObject.GetComponent<Player>().SpawnPlayer();
+            this.health = 3;
         }
     }
 }

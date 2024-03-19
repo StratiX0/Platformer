@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = spawnPosition.position;
+        SpawnPlayer();
     }
 
     // Update is called once per frame
@@ -61,5 +61,10 @@ public class Player : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+
+    public void SpawnPlayer()
+    {
+        transform.position = spawnPosition.position;
     }
 }
