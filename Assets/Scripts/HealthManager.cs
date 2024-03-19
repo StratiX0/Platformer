@@ -9,7 +9,7 @@ public class HealthManager : MonoBehaviour
     [SerializeField] float damageHorizontalImpulse;
     [SerializeField] float damageVerticalImpulse;
 
-    [SerializeField] int health;
+    [SerializeField] public int health;
 
     private void Awake()
     {

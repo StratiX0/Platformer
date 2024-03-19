@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Wall
   - DeathTrigger
+  - Spike
+  - Saw
   layers:
   - Default
   - TransparentFX
