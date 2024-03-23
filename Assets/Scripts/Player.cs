@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Respawn")
+        if (collision.gameObject.tag == "Respawn" && collision.transform != defaultSpawnPosition)
         {
             currentSpawnPosition = collision.transform;
         }
