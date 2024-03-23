@@ -68,7 +68,7 @@ public class HealthManager : MonoBehaviour
         }
         else if (health <= 0 && this.tag == "Player")
         {
-            this.gameObject.GetComponent<Player>().SpawnPlayer();
+            this.gameObject.GetComponent<Player>().RespawnPlayer();
             this.health = 3;
         }
     }

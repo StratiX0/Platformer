@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] Transform spawnPosition;
+    [SerializeField] Transform defaultSpawnPosition;
+    [SerializeField] Transform currentSpawnPosition;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] float speed;
     [SerializeField] float jumpPower;
@@ -47,6 +48,14 @@ public class Player : MonoBehaviour
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Respawn")
+        {
+            currentSpawnPosition = collision.transform;
+        }
+    }
+
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, GroundMask);
@@ -65,6 +74,11 @@ public class Player : MonoBehaviour
 
     public void SpawnPlayer()
     {
-        transform.position = spawnPosition.position;
+        transform.position = defaultSpawnPosition.position;
+    }
+
+    public void RespawnPlayer()
+    {
+        transform.position = currentSpawnPosition.position;
     }
 }
