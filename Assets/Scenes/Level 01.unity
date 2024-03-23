@@ -5334,19 +5334,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3927287276989331962, guid: f4de4773113522e4a854653792d5f925, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.25
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3927287276989331962, guid: f4de4773113522e4a854653792d5f925, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.25
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3927287276989331962, guid: f4de4773113522e4a854653792d5f925, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.32
+      value: 12.355
       objectReference: {fileID: 0}
     - target: {fileID: 3927287276989331962, guid: f4de4773113522e4a854653792d5f925, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 27
+      value: 26.75
       objectReference: {fileID: 0}
     - target: {fileID: 3927287276989331962, guid: f4de4773113522e4a854653792d5f925, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6182,6 +6182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5132285880081315460, guid: 76e3936cb0414c045b058b81d33c6b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5606563517641370325, guid: 76e3936cb0414c045b058b81d33c6b78, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -6202,6 +6206,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7061470305001468089, guid: 76e3936cb0414c045b058b81d33c6b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7333713098138820620, guid: 76e3936cb0414c045b058b81d33c6b78, type: 3}
       propertyPath: m_Color.b
       value: 0.046279836
@@ -6213,6 +6221,10 @@ PrefabInstance:
     - target: {fileID: 7333713098138820620, guid: 76e3936cb0414c045b058b81d33c6b78, type: 3}
       propertyPath: m_Color.r
       value: 0.754717
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200595311858891321, guid: 76e3936cb0414c045b058b81d33c6b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8723430954333381846, guid: 76e3936cb0414c045b058b81d33c6b78, type: 3}
       propertyPath: m_LocalScale.x
@@ -6229,6 +6241,10 @@ PrefabInstance:
     - target: {fileID: 8723430954333381846, guid: 76e3936cb0414c045b058b81d33c6b78, type: 3}
       propertyPath: m_LocalPosition.y
       value: 17.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 9082507911743028058, guid: 76e3936cb0414c045b058b81d33c6b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
